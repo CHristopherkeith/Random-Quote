@@ -1,0 +1,100 @@
+*{
+  font-family: "Helvetica Neue", Helvetica, Arial,Microsoft YaHei,SimHei,SimHei,sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.container{
+	background: rgba(240,239,239,.5);
+	width: 100%;
+	height: 100%;
+}
+.container-box{
+	width: 500px;
+	height: 252px;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+	border-radius: 5px;
+	padding: 20px;
+}
+.center-vertically{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+.content-box{
+	width: 100%;
+	height: 130px;
+	position: relative;
+}
+.content{
+	font-size: 32px;
+	font-weight: bolder;
+	color: rgba(0,0,0,.5);
+}
+.reference{
+	width: 100%;
+	height: 30px;
+	text-align: right;
+	line-height: 30px;
+	font-size: 20px;
+	color: rgba(0,0,0,.5);
+}
+.bottom-bar{
+	width: 100%;
+	height: 50px;
+	line-height: 30px;
+	margin-top: 20px;
+	text-align: center;
+}
+.weibo{
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	color: rgba(0,0,0,.4);
+	float: left;
+}
+.weibo:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	color: rgba(0,0,0,.8);
+	transition: .3s;
+}
+.change{
+	float: right;
+	width: 90px;
+	height: 30px;
+	border: 0px;
+	background: rgba(0,0,0,.3);
+	color: rgba(255,255,255,1);
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bolder;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.8);
+	outline: none;
+}
+.change:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	background: rgba(0,0,0,.1);
+	color: rgba(0,0,0,.5);
+	transition: .3s;
+}
+@media(max-height: 300px){
+	body{
+		height: 300px;
+	}
+}
+@media(max-width: 500px){
+	.container-box{
+		width: 95%;
+	}
+}
